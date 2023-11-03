@@ -3,6 +3,9 @@
 using namespace std;
 int main()
 {
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+
     unordered_set<int> m_Set;
 
     int nList = 0;
