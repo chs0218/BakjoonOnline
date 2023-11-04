@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <vector>
 #include <algorithm>
 using namespace std;
 int main()
@@ -26,10 +27,31 @@ int main()
     }
 
     sort(vNums.begin(), vNums.end());
-    auto it = max_element(vNums.begin(), vNums.end());
+
+    bool bChangeValue = true;;
+    int nMaxFrequency = 0;
+    int nMaxFrequencyNum = nMin + 4000;
+
+    for (int i = nMin + 4000; i <= nMax + 4000; ++i)
+    {
+        if (nMaxFrequency < vCounts[i])
+        {
+            bChangeValue = true;
+            nMaxFrequency = vCounts[i];
+            nMaxFrequencyNum = i;
+        }
+
+        else if(bChangeValue && nMaxFrequency == vCounts[i])
+        {
+            bChangeValue = false;
+            nMaxFrequencyNum = i;
+        }
+    }
 
     float fAverage = static_cast<float>(nSum) / static_cast<float>(nNum);
     cout << floor(fAverage + 0.5f) << "\n";
-    cout << vNums[nNum / 2 + 1]; << "\n";
+    cout << vNums[nNum / 2] << "\n";
+    cout << nMaxFrequencyNum - 4000 << "\n";
+    cout << nMax - nMin << "\n";
 
 }
