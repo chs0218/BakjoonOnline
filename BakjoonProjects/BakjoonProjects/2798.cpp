@@ -20,7 +20,7 @@ int main()
 	{
 		for (int j = i + 1; j < nCard - 1; ++j)
 		{
-			for (int k = i + 2; k < nCard; ++k)
+			for (int k = j + 1; k < nCard; ++k)
 			{
 				if (vCards[i] + vCards[j] + vCards[k] <= nGoal)
 					ans = max(ans, vCards[i] + vCards[j] + vCards[k]);
