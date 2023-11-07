@@ -102,6 +102,9 @@
     <ClCompile Include="10989.cpp">
       <Filter>소스 파일\Class2</Filter>
     </ClCompile>
+    <ClCompile Include="15829.cpp">
+      <Filter>소스 파일\Class2</Filter>
+    </ClCompile>
     <ClCompile Include="TMP.cpp">
       <Filter>소스 파일\Class2</Filter>
     </ClCompile>
