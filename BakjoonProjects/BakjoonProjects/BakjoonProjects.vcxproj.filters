@@ -111,7 +111,10 @@
     <ClCompile Include="18110.cpp">
       <Filter>소스 파일\Class2</Filter>
     </ClCompile>
-    <ClCompile Include="TMP.cpp">
+    <ClCompile Include="1003.cpp">
+      <Filter>소스 파일\Class3</Filter>
+    </ClCompile>
+    <ClCompile Include="1012.cpp">
       <Filter>소스 파일\Class3</Filter>
     </ClCompile>
   </ItemGroup>
