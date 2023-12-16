@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\Class3">
       <UniqueIdentifier>{767d0ddb-7a69-401d-8372-333ca68f136e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class4">
+      <UniqueIdentifier>{415b29ef-5b12-48e1-8ff2-38e12d57ed19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1152.cpp">
@@ -233,6 +236,9 @@
     </ClCompile>
     <ClCompile Include="9019.cpp">
       <Filter>소스 파일\Class3</Filter>
+    </ClCompile>
+    <ClCompile Include="9251.cpp">
+      <Filter>소스 파일\Class4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
