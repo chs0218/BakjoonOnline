@@ -24,7 +24,8 @@ void dijkstra(int nStartPoint, int nEndPoint, int nCity)
         int cur = qEdge.top().nLoc;
         int cost = qEdge.top().nCost;
         qEdge.pop();
-
+        if (ans[cur] < cost)
+            continue;
         for (int i = 0; i < vGraph[cur].size(); ++i)
         {
             int nextPoint = vGraph[cur][i].nLoc;
@@ -42,6 +43,7 @@ void dijkstra(int nStartPoint, int nEndPoint, int nCity)
 int main()
 {
     cin.tie(NULL);
+    cout.tie(NULL);
     ios::sync_with_stdio(false);
 
     int nCity;
