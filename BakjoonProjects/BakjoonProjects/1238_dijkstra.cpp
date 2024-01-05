@@ -14,9 +14,11 @@ int d[1001][1001];
 int N, M, X;
 void dijkstra(int n)
 {
-    for (int i = 0; i < N + 1; ++i)
-        d[n][i] = 1e9;
-
+    for (int i = 1; i <= N; ++i)
+    {
+        if (n == i) d[n][i] = 0;
+        else d[n][i] = 1e9;
+    }
     priority_queue<Edge> qEdge;
     qEdge.push(Edge{ n, 0 });
 
