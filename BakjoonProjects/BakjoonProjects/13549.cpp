@@ -23,8 +23,6 @@ int main()
     while (!pq.empty()) {
         int cur = pq.top().v;
         int t = pq.top().w;
-
-        cout << cur << " " << t << endl;
         pq.pop();
 
         if (cur == K) {
