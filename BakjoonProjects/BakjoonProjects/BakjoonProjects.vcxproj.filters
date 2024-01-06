@@ -327,5 +327,11 @@
     <ClCompile Include="11657.cpp">
       <Filter>소스 파일\BellmanFord</Filter>
     </ClCompile>
+    <ClCompile Include="1504.cpp">
+      <Filter>소스 파일\Class4</Filter>
+    </ClCompile>
+    <ClCompile Include="1918.cpp">
+      <Filter>소스 파일\Class4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
