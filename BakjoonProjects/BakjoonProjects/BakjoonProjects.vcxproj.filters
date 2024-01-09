@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\BellmanFord">
       <UniqueIdentifier>{837412eb-e322-4ec9-89db-5a9810f51427}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class5">
+      <UniqueIdentifier>{2bab291e-9be9-4ef7-87bb-0705d03527fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1152.cpp">
@@ -398,6 +401,9 @@
     </ClCompile>
     <ClCompile Include="14938.cpp">
       <Filter>소스 파일\Class4</Filter>
+    </ClCompile>
+    <ClCompile Include="1562.cpp">
+      <Filter>소스 파일\Class5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
