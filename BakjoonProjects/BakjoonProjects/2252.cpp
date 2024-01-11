@@ -1,48 +1,48 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
+#include <queue>
 using namespace std;
-int N, M;
-struct Student {
-    int n;
-    int h;
-};
-bool operator<(Student lhs, Student rhs)
-{
-    if (lhs.h == rhs.h) return lhs.n < rhs.n;
-    return lhs.h > rhs.h;
-}
-Student students[32000];
-vector<int> vCompare[32000];
-void dfs(int prev, int cur)
-{
-    students[cur].h = max(students[cur].h, students[prev].h + 1);
-
-    for (int i = 0; i < vCompare[cur].size(); ++i)
-        dfs(cur, vCompare[cur][i]);
-}
 int main()
 {
+    int N, M;
     cin >> N >> M;
 
-    for (int i = 0; i < N; ++i)
-    {
-        students[i].n = i + 1;
-        students[i].h = 0;
-    }
+    vector<int> ans;
+    vector<int> vTopology(N);
+    vector<vector<int>> vCompare(N);
 
     for (int i = 0; i < M; ++i)
     {
         int lhs, rhs;
         cin >> lhs >> rhs;
-        vCompare[rhs - 1].push_back(lhs - 1);
+        vCompare[lhs - 1].push_back(rhs - 1);
+        vTopology[rhs - 1]++;
+    }
+
+    queue<int> q;
+
+    for (int i = 0; i < N; ++i)
+    {
+        if (vTopology[i] == 0)
+            q.push(i);
     }
 
     for (int i = 0; i < N; ++i)
-        dfs(i, i);
+    {
+        if (q.empty()) break;
+        int cur = q.front();
+        q.pop();
 
-    sort(students, students + N);
+        ans.push_back(cur);
 
-    for (int i = 0; i < N; ++i)
-        cout << students[i].n << " ";
+        for (int j = 0; j < vCompare[cur].size(); ++j)
+        {
+            int next = vCompare[cur][j];
+            if (--vTopology[next] == 0)
+                q.push(next);
+        }
+    }
+
+    for (const int& n : ans)
+        cout << n + 1 << " ";
 }
