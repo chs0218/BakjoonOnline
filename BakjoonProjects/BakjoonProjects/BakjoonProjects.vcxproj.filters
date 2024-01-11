@@ -417,5 +417,8 @@
     <ClCompile Include="2143.cpp">
       <Filter>소스 파일\Class5</Filter>
     </ClCompile>
+    <ClCompile Include="2252.cpp">
+      <Filter>소스 파일\Class5</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
