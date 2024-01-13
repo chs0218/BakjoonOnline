@@ -1,56 +1,49 @@
 #include <iostream>
-#include <memory.h>
+#include <vector>
 using namespace std;
-bool prime[4000001];
-void Eratos(int n)
+vector<int> Eratos(int n)
 {
-    if (n <= 1) return;
+    vector<bool> bPrime(n + 1, true);
+    vector<int> vPrime;
 
-    memset(prime, true, sizeof(prime));
-    prime[0] = false;
-    prime[1] = false;
+    bPrime[0] = false;
+    bPrime[1] = false;
 
     for (int i = 2; i * i <= n; ++i)
     {
-        if (prime[i])
+        if (bPrime[i])
         {
             for (int j = i * i; j <= n; j += i)
-                prime[j] = false;
+                bPrime[j] = false;
         }
     }
+
+    for (int i = 2; i <= n; ++i)
+        if (bPrime[i]) vPrime.push_back(i);
+
+    return vPrime;
 }
 int main()
 {
     int N;
     cin >> N;
 
-    Eratos(N);
+    if (N <= 1) {
+        cout << "0";
+        return 0;
+    }
 
-    int lhs = 2, rhs = 2, sum = 2;
+    vector<int> vPrime = Eratos(N);
+
+    int lhs = 0, rhs = 0, sum = vPrime[0];
     int ans = 0;
+
     while (1)
     {
         if (sum == N) ++ans;
-        if (sum > N) {
-            sum -= lhs;
-            for (int i = lhs + 1; i <= N; ++i)
-                if (prime[i]) {
-                    lhs = i;
-                    break;
-                }
-        }
-        else {
-            int prev = rhs;
-            for (int i = rhs + 1; i <= N; ++i)
-            {
-                if (prime[i]) {
-                    sum += i;
-                    rhs = i;
-                    break;
-                }
-            }
-            if (prev == rhs) break;
-        }
+        if (sum > N) sum -= vPrime[lhs++];
+        else if (rhs == vPrime.size() - 1) break;
+        else sum += vPrime[++rhs];
     }
     cout << ans;
 }
