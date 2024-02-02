@@ -20,10 +20,10 @@ int main() {
     Rectangle rectangle2 = { 4, 4, 7, 7 };
 
     if (CheckCollision(rectangle1, rectangle2)) {
-        std::cout << "Collide" << std::endl;
+        cout << "Collide" << endl;
     }
     else {
-        std::cout << "Not Collide" << std::endl;
+        cout << "Not Collide" << endl;
     }
     return 0;
 }

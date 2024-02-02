@@ -17,7 +17,7 @@ int main()
         return abs(lhs) > abs(rhs);
     };
 
-    priority_queue<int, std::vector<int>, decltype(cmp)> pqNum(cmp);
+    priority_queue<int, vector<int>, decltype(cmp)> pqNum(cmp);
 
     for (int i = 0; i < nOperate; ++i)
     {
