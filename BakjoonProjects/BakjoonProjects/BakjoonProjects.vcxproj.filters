@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\Bronze">
       <UniqueIdentifier>{3544d35e-0223-431c-981c-e527cb2fe6cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Gold">
+      <UniqueIdentifier>{b9bc313d-6d76-4ba6-b8ee-e877053521ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1152.cpp">
@@ -482,6 +485,9 @@
     </ClCompile>
     <ClCompile Include="1124.cpp">
       <Filter>소스 파일\Silver</Filter>
+    </ClCompile>
+    <ClCompile Include="2470.cpp">
+      <Filter>소스 파일\Gold</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
