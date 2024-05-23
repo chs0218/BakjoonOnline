@@ -534,5 +534,8 @@
     <ClCompile Include="15723.cpp">
       <Filter>소스 파일\Silver</Filter>
     </ClCompile>
+    <ClCompile Include="1446.cpp">
+      <Filter>소스 파일\dijkstra</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
