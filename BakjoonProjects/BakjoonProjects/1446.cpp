@@ -20,10 +20,11 @@ int main()
     }
 
     for (int i = 0; i < 10001; ++i)
-        dist[i] = i;
+        dist[i] = 1e9;
 
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pqInfo;
     pqInfo.push({ 0, 0 });
+    dist[0] = 0;
 
     while (!pqInfo.empty()) {
         int cur = pqInfo.top().second;
