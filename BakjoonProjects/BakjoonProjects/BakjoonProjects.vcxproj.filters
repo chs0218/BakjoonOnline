@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\Gold">
       <UniqueIdentifier>{b9bc313d-6d76-4ba6-b8ee-e877053521ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\GroomEdu">
+      <UniqueIdentifier>{89e970d6-0fcc-4c09-bca4-eb2117aa31c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1152.cpp">
@@ -537,5 +540,11 @@
     <ClCompile Include="1446.cpp">
       <Filter>소스 파일\dijkstra</Filter>
     </ClCompile>
+    <ClCompile Include="좌표정렬%281%29.cpp">
+      <Filter>소스 파일\GroomEdu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="좌표정렬1" />
   </ItemGroup>
 </Project>
