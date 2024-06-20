@@ -555,6 +555,21 @@
     <ClCompile Include="2178%28Practice%29.cpp">
       <Filter>소스 파일\GroomEdu</Filter>
     </ClCompile>
+    <ClCompile Include="단어필터.cpp">
+      <Filter>소스 파일\GroomEdu</Filter>
+    </ClCompile>
+    <ClCompile Include="1753%28Practice%29.cpp">
+      <Filter>소스 파일\dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="1261.cpp">
+      <Filter>소스 파일\dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="11404%28Practice%29.cpp">
+      <Filter>소스 파일\dijkstra</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice.cpp">
+      <Filter>소스 파일\GroomEdu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="좌표정렬1" />
