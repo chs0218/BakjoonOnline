@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\GroomEdu">
       <UniqueIdentifier>{89e970d6-0fcc-4c09-bca4-eb2117aa31c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\HackerRank">
+      <UniqueIdentifier>{b53bd0c0-277e-454f-9a55-e3a52a762d98}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1152.cpp">
@@ -584,6 +587,9 @@
     </ClCompile>
     <ClCompile Include="30805.cpp">
       <Filter>소스 파일\Class4</Filter>
+    </ClCompile>
+    <ClCompile Include="Staircase.cpp">
+      <Filter>소스 파일\HackerRank</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
