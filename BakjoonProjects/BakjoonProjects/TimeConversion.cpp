@@ -19,6 +19,16 @@ string timeConversion1(string s) {
 
 string timeConversion2(string s) {
     regex timePattern(R"((\d{2}):(\d{2}):(\d{2})(AM|PM))");
+    /*
+    std::vector<std::string> phone_numbers = {"010-1234-5678", "010-123-4567",
+                                            "011-1234-5567", "010-12345-6789",
+                                            "123-4567-8901", "010-1234-567"};
+    std::regex re("[01]{3}-\\d{3,4}-\\d{4}");
+    for (const auto &number : phone_numbers) {
+    std::cout << number << ": " << std::boolalpha
+              << std::regex_match(number, re) << '\n';
+    
+    */
     smatch match;
 
     bool bMatch = regex_match(s, match, timePattern);
