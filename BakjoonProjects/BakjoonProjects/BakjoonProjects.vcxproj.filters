@@ -591,6 +591,9 @@
     <ClCompile Include="Staircase.cpp">
       <Filter>소스 파일\HackerRank</Filter>
     </ClCompile>
+    <ClCompile Include="TimeConversion.cpp">
+      <Filter>소스 파일\HackerRank</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="좌표정렬1" />
