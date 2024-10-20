@@ -1,58 +1,73 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 #include <algorithm>
 using namespace std;
+int S[50];
 int main()
 {
-    cin.tie(0);
-    cout.tie(0);
-    ios::sync_with_stdio(false);
+	priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
 
-    int L;
-    cin >> L;
+	int L;
+	cin >> L;
 
-    vector<int> S(L);
-    for (int i = 0; i < L; ++i)
-        cin >> S[i];
+	// 집합 S에 포함된 정수들은 좋은 구간이 0이다.
+	for (int i = 0; i < L; ++i)
+	{
+		cin >> S[i];
+		pq.push({ 0, S[i] });
+	}
 
-    int nPrint;
-    cin >> nPrint;
+	int N;
+	cin >> N;
 
-    sort(S.begin(), S.end());
+	sort(S, &S[L]);
 
-    priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
+	for (int i = 0; i < L; ++i)
+	{
+		int Start = 0;
+		i == 0 ? Start = 1 : Start = S[i - 1] + 1;
 
-    for (int i = 0; i < S.size(); ++i)
-    {
-        int start;
-        i == 0 ? start = 0 : start = S[i - 1];
+		int End = S[i] - 1;
 
-        int end = S[i];
-        
-        int nCount = 0;
-        for (int j = 0; j < (end - start) / 2; ++j)
-        {
-            if (nCount++ >= 50) break;
-            long long value = static_cast<long long>(j + 1) * static_cast<long long>(end - (start + j + 1));
-            pq.push({ value, start + (j + 1) });
-            pq.push({ value, end - (j + 1) });
-        }
+		if (Start == End && i == 0)
+		{
+			pq.push({ 0, Start });
+			continue;
+		}
 
-        pq.push({ 0, end });
-    }
+		int Count = 0;
+		for (int j = Start; j <= (Start + End) / 2; ++j)
+		{
+			if (Count == 50) break;
 
-    while (!pq.empty() && nPrint-- > 0)
-    {
-        pair<long long, int> result = pq.top();
-        pq.pop();
+			long long Value = static_cast<long long>(j - Start + 1) * static_cast<long long>(End - j + 1) - static_cast<long long>(1);
+			
+			pq.push({ Value, j });
 
-        cout << result.second << " ";
-    }
+			if (j != End - Count)
+			{
+				pq.push({ Value, End - Count });
+			}
 
-    int next = S.back() + 1;
-    while (nPrint-- > 0)
-    {
-        cout << next++ << " ";
-    }
+			Count += 1;
+		}
+	}
+
+	int nPrint = 0;
+	while (N-- > 0)
+	{
+		if (!pq.empty())
+		{
+			pair<long long, int> Cur = pq.top();
+			pq.pop();
+
+			cout << Cur.second << " ";
+		}
+
+		else
+		{
+			++nPrint;
+			cout << S[L - 1] + nPrint << " ";
+		}
+	}
 }
