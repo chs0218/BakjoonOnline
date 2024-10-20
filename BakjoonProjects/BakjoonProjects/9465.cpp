@@ -1,6 +1,9 @@
 #include <iostream>
 #include <memory.h>
 using namespace std;
+/*
+다이나믹 프로그래밍
+*/
 int dp[3][100001];
 int score[3][100001];
 int main()

@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+/*
+다이나믹 프로그래밍
+*/
 int arr[1001];
 int dp[1001];
 int main()

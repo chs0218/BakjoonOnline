@@ -2,6 +2,12 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+다이나믹 프로그래밍
+그래프 이론
+위상 정렬
+방향 비순환 그래프
+*/
 int cost[1001];
 int ans[1001];
 int nTopology[1001];

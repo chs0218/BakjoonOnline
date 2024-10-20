@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/*
+이분 탐색
+두 포인터
+*/
 int main()
 {
     int N;

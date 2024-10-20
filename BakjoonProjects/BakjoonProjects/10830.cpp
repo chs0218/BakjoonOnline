@@ -1,6 +1,12 @@
 #include <iostream>
 #include <array>
 using namespace std;
+/*
+수학
+분할 정복
+분할 정복을 이용한 거듭제곱
+선형대수학
+*/
 constexpr int MOD = 1000;
 array<array<int, 5>, 5> rc;
 int N;

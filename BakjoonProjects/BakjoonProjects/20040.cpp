@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+자료 구조
+분리 집합
+*/
 int parent[500000];
 int GetParent(int n)
 {

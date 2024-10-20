@@ -1,6 +1,12 @@
 #include <iostream>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그리디 알고리즘
+그래프 탐색
+너비 우선 탐색
+*/
 int main()
 {
     long long A, B;

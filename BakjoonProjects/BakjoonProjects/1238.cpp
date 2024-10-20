@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+/*
+그래프 이론
+최단 경로
+데이크스트라
+*/
 int dp[1001][1001];
 int N, M, X;
 int main()

@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/*
+Æ®¸®
+Àç±Í
+*/
 struct Node {
 	char chRoot = '.';
 	char chLeft = '.';

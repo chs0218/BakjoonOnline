@@ -2,6 +2,13 @@
 #include <string>
 #include <queue>
 using namespace std;
+/*
+자료 구조
+그래프 이론
+그래프 탐색
+깊이 우선 탐색
+분리 집합
+*/
 int N, M;
 char MAP[1001][1001];
 int bVisited[1001][1001];

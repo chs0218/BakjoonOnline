@@ -2,6 +2,9 @@
 #include <set>
 #include <algorithm>
 using namespace std;
+/*
+백트래킹
+*/
 int N, M;
 int arr[8];
 int nSeq[8];

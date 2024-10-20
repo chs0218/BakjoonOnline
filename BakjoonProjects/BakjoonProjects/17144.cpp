@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+구현
+시뮬레이션
+*/
 int board[50][50];
 int update[50][50];
 int R, C, T;

@@ -2,6 +2,10 @@
 #include <string>
 #include <stack>
 using namespace std;
+/*
+자료 구조
+스택
+*/
 string ans;
 void changeStr(string str)
 {

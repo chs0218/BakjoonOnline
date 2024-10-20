@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/*
+기하학
+다각형의 넓이
+*/
 double GetSpace(pair<int, int> v1, pair<int, int> v2, pair<int, int> v3)
 {
     pair<long long, long long> vec1 = make_pair(v2.first - v1.first, v2.second - v1.second);

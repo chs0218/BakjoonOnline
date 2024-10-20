@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+다이나믹 프로그래밍
+누적 합
+*/
 int info[1025][1025];
 int main()
 {

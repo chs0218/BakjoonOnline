@@ -3,6 +3,12 @@
 #include <string>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+깊이 우선 탐색
+백트래킹
+*/
 int R, C;
 char board[20][20];
 bool bVisited[26];

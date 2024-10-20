@@ -2,7 +2,11 @@
 #include <array>
 #include <algorithm>
 using namespace std;
-
+/*
+트리
+분할 정복
+재귀
+*/
 int N;
 array<int, 100000> vInorder;
 array<int, 100000> vPreorder;

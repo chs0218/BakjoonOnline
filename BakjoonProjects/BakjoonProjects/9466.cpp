@@ -1,6 +1,11 @@
 #include <iostream>
 #include <memory.h>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+깊이 우선 탐색
+*/
 int line[100001];
 int visited[100001];
 int dfs(int n, int curDepth, int preDepth)

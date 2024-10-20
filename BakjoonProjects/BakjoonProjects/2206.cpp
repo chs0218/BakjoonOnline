@@ -2,6 +2,11 @@
 #include <string>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+너비 우선 탐색
+*/
 bool bBoard[1001][1001];
 bool bVisited[2][1001][1001];
 int N, M;

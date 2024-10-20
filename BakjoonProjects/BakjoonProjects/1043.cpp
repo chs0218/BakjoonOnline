@@ -1,5 +1,11 @@
 #include <iostream>
 using namespace std;
+/*
+자료 구조
+그래프 이론
+그래프 탐색
+분리 집합
+*/
 int nParent[51];
 int arrParty[50][50];
 int GetParent(int n)

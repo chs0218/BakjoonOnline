@@ -1,6 +1,12 @@
 #include <iostream>
 #include <unordered_map>
 using namespace std;
+/*
+자료 구조
+이분 탐색
+누적 합
+해시를 사용한 집합과 맵
+*/
 long long T;
 int N, M;
 long long A[1001];

@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+다이나믹 프로그래밍
+슬라이딩 윈도우
+*/
 int N;
 int board[100000][3];
 int maxdp[2][3];

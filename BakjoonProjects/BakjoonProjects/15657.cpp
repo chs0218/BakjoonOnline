@@ -1,11 +1,14 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+/*
+백트래킹
+*/
 int N, M;
 int arr[8];
 int nSeq[8];
 bool bVisited[8];
-void Seq(int nDepth) {
+void Seq(int nDepth, int nPrevIndex) {
     if (nDepth == M) {
         for (int i = 0; i < M; ++i)
             cout << nSeq[i] << " ";
@@ -13,14 +16,10 @@ void Seq(int nDepth) {
         return;
     }
 
-    for (int i = 0; i < N; ++i)
+    for (int i = nPrevIndex; i < N; ++i)
     {
-        if (!bVisited[i]) {
-            bVisited[i] = true;
-            nSeq[nDepth] = arr[i];
-            Seq(nDepth + 1,);
-        }
-        
+        nSeq[nDepth] = arr[i];
+        Seq(nDepth + 1, i);
     }
 }
 int main()
@@ -32,5 +31,5 @@ int main()
 
     sort(arr, arr + N);
 
-    Seq(0);
+    Seq(0, 0);
 }

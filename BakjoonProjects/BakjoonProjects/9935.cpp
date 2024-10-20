@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*
+자료 구조
+문자열
+스택
+*/
 int main()
 {
     string strTotal, strBomb;

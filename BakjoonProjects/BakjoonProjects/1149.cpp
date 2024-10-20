@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+/*
+다이나믹 프로그래밍
+*/
 int cost[1000][3];
 int dp[1000][3];
 int main()

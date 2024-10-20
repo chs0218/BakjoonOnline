@@ -2,6 +2,12 @@
 #include <queue>
 #include <algorithm>
 using namespace std;
+/*
+수학
+자료 구조
+정렬
+우선순위 큐
+*/
 int S[50];
 int main()
 {

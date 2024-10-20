@@ -2,6 +2,11 @@
 #include <math.h>
 #include <algorithm>
 using namespace std;
+/*
+정렬
+이분 탐색
+두 포인터
+*/
 int N;
 int value[100000];
 int main()

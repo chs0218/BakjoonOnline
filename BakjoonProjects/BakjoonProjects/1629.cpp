@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+수학
+분할 정복을 이용한 거듭제곱
+*/
 int MyPow(int A, int B, int C)
 {
 	if (B == 0) return 1;

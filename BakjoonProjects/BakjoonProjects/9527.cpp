@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+/*
+수학
+누적 합
+비트마스킹
+*/
 long long dp[55];
 long long GetTotal(long long n)
 {

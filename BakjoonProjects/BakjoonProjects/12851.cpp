@@ -1,6 +1,11 @@
 #include <iostream>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+너비 우선 탐색
+*/
 bool bVisited[100001];
 int main()
 {

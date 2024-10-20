@@ -3,6 +3,13 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+구현
+그래프 이론
+브루트포스 알고리즘
+그래프 탐색
+너비 우선 탐색
+*/
 int map[8][8];
 int chk[8][8];
 int dx[4] = { 1, 0, -1, 0 };

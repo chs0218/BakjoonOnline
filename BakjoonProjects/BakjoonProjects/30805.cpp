@@ -2,7 +2,9 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-
+/*
+그리디 알고리즘
+*/
 int GetMaxCommonElement(vector<int>& A, vector<int>& B)
 {
 	int Ret = -1;

@@ -2,6 +2,11 @@
 #include <vector>
 #include <math.h>
 using namespace std;
+/*
+구현
+브루트포스 알고리즘
+백트래킹
+*/
 int ans = 1e10;
 int nSize = 0, nGoal = 0;
 int nHouse = 0, nChicken = 0;

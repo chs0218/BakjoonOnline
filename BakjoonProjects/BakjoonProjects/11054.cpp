@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/*
+다이나믹 프로그래밍
+*/
 int plusArr[1000];
 int minusArr[1000];
 int main()

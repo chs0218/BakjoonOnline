@@ -3,6 +3,13 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+트리
+너비 우선 탐색
+깊이 우선 탐색
+*/
 vector<int> vNode[100001];
 int ans[100001];
 void bfs(int n)

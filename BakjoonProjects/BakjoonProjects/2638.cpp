@@ -2,6 +2,14 @@
 #include <memory.h>
 #include <queue>
 using namespace std;
+/*
+구현
+그래프 이론
+그래프 탐색
+시뮬레이션
+너비 우선 탐색
+깊이 우선 탐색
+*/
 int N, M;
 int board[100][100];
 bool bOutside[100][100];

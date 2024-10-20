@@ -2,6 +2,13 @@
 #include <memory.h>
 #include <queue>
 using namespace std;
+/*
+구현
+그래프 이론
+그래프 탐색
+시뮬레이션
+너비 우선 탐색
+*/
 int space[20][20];
 bool visited[20][20];
 int dx[4] = { 0, -1, 1, 0 };

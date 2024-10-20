@@ -2,6 +2,13 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+자료 구조
+그래프 이론
+우선순위 큐
+위상 정렬
+방향 비순환 그래프
+*/
 int main()
 {
     int N, M;

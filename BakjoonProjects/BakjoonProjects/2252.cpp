@@ -2,6 +2,11 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+위상 정렬
+방향 비순환 그래프
+*/
 int main()
 {
     int N, M;

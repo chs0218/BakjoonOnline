@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+/*
+브루트포스 알고리즘
+백트래킹
+*/
 int N;
 int ans = 0;
 int queenX[15];

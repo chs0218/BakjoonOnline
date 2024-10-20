@@ -1,6 +1,11 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+/*
+기하학
+많은 조건 분기
+선분 교차 판정
+*/
 int ccw(pair<long long, long long> vec1, pair<long long, long long> vec2)
 {
     long long ret = vec1.first * vec2.second - vec2.first * vec1.second;

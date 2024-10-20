@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+/*
+백트래킹
+*/
 int N, M;
 int nSeq[8];
 void Seq(int nDepth, int nPrevious) {

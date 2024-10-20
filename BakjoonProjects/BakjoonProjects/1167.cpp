@@ -2,6 +2,12 @@
 #include <vector>
 #include <memory.h>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+트리
+깊이 우선 탐색
+*/
 vector <pair<int, int>> vec[100001];
 bool visited[100001];
 int V = 0, ans = 0, nLastNode = 0;

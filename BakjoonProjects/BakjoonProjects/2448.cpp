@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*
+Àç±Í
+*/
 char board[3072][6144];
 void printStar(int offsetX, int offsetY, int depth)
 {

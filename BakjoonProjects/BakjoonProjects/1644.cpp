@@ -1,5 +1,12 @@
 #include <iostream>
 #include <vector>
+/*
+수학
+정수론
+두 포인터
+소수 판정
+에라토스테네스의 체
+*/
 using namespace std;
 vector<int> Eratos(int n)
 {

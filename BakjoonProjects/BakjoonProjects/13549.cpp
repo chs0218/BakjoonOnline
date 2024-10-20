@@ -1,6 +1,14 @@
 #include <iostream>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+너비 우선 탐색
+최단 경로
+데이크스트라
+0-1 너비 우선 탐색
+*/
 struct Info {
     int v, w;
 };

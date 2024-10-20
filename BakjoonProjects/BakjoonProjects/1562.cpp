@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+/*
+다이나믹 프로그래밍
+비트마스킹
+비트필드를 이용한 다이나믹 프로그래밍
+*/
 int N;
 constexpr long long MOD = 1000000000;
 long long stair[10][101][1024];

@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+/*
+다이나믹 프로그래밍
+배낭 문제
+*/
 struct Object {
     int weight;
     int value;

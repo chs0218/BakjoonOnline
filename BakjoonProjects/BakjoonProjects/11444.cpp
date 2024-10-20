@@ -1,6 +1,10 @@
 #include <iostream>
 #include <unordered_map>
 using namespace std;
+/*
+수학
+분할 정복을 이용한 거듭제곱
+*/
 constexpr long long MOD = 1000000007;
 unordered_map<long long, long long> um;
 long long Fibo(long long n)

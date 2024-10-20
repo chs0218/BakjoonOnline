@@ -2,6 +2,13 @@
 #include <math.h>
 #include <numeric>
 using namespace std;
+/*
+수학
+정수론
+분할 정복을 이용한 거듭제곱
+모듈로 곱셈 역원
+페르마의 소정리
+*/
 constexpr long long Mod = 1000000007;
 long long myPow(long long a, long long b)
 {

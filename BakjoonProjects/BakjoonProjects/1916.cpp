@@ -2,6 +2,11 @@
 #include <vector>
 #include <queue>
 using namespace std;
+/*
+그래프 이론
+최단 경로
+데이크스트라
+*/
 struct Edge {
     int nLoc, nCost;
 };

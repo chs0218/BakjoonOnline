@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*
+다이나믹 프로그래밍
+문자열
+*/
 int dp[1001][1001];
 int main()
 {

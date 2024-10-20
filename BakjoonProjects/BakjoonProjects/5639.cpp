@@ -1,5 +1,11 @@
 #include <iostream>
 using namespace std;
+/*
+그래프 이론
+그래프 탐색
+트리
+재귀
+*/
 struct Node {
     int value = 0;
     Node* left = NULL;

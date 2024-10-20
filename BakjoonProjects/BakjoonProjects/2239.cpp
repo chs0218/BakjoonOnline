@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*
+구현
+백트래킹
+*/
 int board[9][9];
 int column[9][10];
 int row[9][10];

@@ -1,6 +1,11 @@
 #include <iostream>
 #include <queue>
 using namespace std;
+/*
+다이나믹 프로그래밍
+그래프 이론
+그래프 탐색
+*/
 struct Pipe {
     int r, c, shape;
 };
