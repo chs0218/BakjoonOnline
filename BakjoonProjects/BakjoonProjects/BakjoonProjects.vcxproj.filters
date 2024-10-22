@@ -603,6 +603,9 @@
     <ClCompile Include="좌표사이최단경로.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="금액맞추기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="좌표정렬1" />
