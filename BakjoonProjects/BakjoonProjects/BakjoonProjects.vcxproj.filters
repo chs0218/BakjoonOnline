@@ -609,6 +609,15 @@
     <ClCompile Include="2배보다커지는수열.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="연속하는세문자가다른문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="색맹.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="화면에출력.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="좌표정렬1" />
