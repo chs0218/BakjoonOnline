@@ -621,6 +621,9 @@
     <ClCompile Include="10835.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10473.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="좌표정렬1" />
